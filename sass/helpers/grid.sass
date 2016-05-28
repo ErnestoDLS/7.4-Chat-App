@@ -1,0 +1,10 @@
+// Grid
+
+.grid__row
+  font-size: 0
+
+@for $i from 1 through $numberOfColumns
+  .grid__col--#{$i}
+    display: inline-block
+    width: (100% / $numberOfColumns) * $i
+    font-size: $fontSize--base
